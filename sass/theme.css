@@ -1,0 +1,59 @@
+main {
+  overflow: hidden;
+}
+
+/*********** HERO - BANNER ***************/
+
+.banner {
+  position: relative;
+  background-image: none;
+}
+
+.banner__background {
+  position: absolute;
+  min-width: 100%;
+  bottom: 0;
+  animation: move-down 2s;
+}
+@keyframes move-down  {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }  
+  to {
+    transform: translateY(0);
+  }
+}
+
+.banner__logo {
+  margin-left: 24.7%;
+  animation: move-up 2s both, float 3s /*infinite*/;  
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  } 
+  to {
+    transform: translateY(0);  
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(6px);
+  }
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateY(6px); 
+  }
+}
+
+
