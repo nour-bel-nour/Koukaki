@@ -27,7 +27,7 @@ main {
 
 .banner__logo {
   margin-left: 24.7%;
-  animation: move-up 2s both, float 3s /*infinite*/;  
+  animation: move-up 2s both, float 7s infinite;  
 }
 @keyframes move-up {
   from {
@@ -56,4 +56,44 @@ main {
   }
 }
 
+/************* FLEURS **************/
 
+.story__article::after {
+	width: 188px;
+	height: 188px;
+}
+.story h2::after,
+.site-footer::before {
+	width: 155px;
+	height: 155px;
+}
+#studio h2::after {
+  width: 109px;
+	height: 109px;
+}
+#studio h2::before {
+  width: 203px;
+	height: 203px;
+}
+.site-footer::after {
+  width: 173px;
+  height: 173px;
+}
+.story__article::after,
+.story h2::after,
+.site-footer::before,
+#studio h2::after,
+#studio h2::before,
+.site-footer::after,
+.site-footer ul::after
+{
+  animation: rotate-flower 10s  linear infinite;
+}
+@keyframes rotate-flower {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
