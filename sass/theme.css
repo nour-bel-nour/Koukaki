@@ -2,7 +2,7 @@ main {
   overflow: hidden;
 }
 
-/*********** HERO - BANNER ***************/
+/*********** HERO -- HEADER ***************/
 
 .banner {
   position: relative;
@@ -26,7 +26,6 @@ main {
 }
 
 .banner__logo {
-  margin-left: 24.7%;
   animation: move-up 2s both, float 7s infinite;  
 }
 @keyframes move-up {
@@ -97,3 +96,18 @@ main {
       transform: rotate(360deg);
   }
 }
+
+/*************** H2 -- H3 *************/
+
+.story__title,
+.characters__title,
+.place__title,
+.studio__title{
+  color: transparent;
+}
+
+.visible{
+  color: #FFF5E9;
+  transition: 3s;
+}
+
