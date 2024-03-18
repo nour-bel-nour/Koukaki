@@ -9,7 +9,8 @@ main {
   background-image: none;
 }
 
-.banner__background {
+.banner__background,
+.banner__video {
   position: absolute;
   min-width: 100%;
   bottom: 0;
@@ -26,7 +27,8 @@ main {
 }
 
 .banner__logo {
-  animation: move-up 2s both, float 7s infinite;  
+  z-index: 1;
+  animation: move-up 2s both, float 3s infinite;  
 }
 @keyframes move-up {
   from {
@@ -80,11 +82,13 @@ main {
 }
 .story__article::after,
 .story h2::after,
-.site-footer::before,
 #studio h2::after,
 #studio h2::before,
 .site-footer::after,
-.site-footer ul::after
+.site-footer::before,
+.site-footer ul::after,
+.nomination::before,
+.nomination::after
 {
   animation: rotate-flower 10s  linear infinite;
 }
@@ -102,7 +106,8 @@ main {
 .story__title,
 .characters__title,
 .place__title,
-.studio__title{
+.studio__title,
+.oscars__title{
   color: transparent;
 }
 
@@ -111,3 +116,43 @@ main {
   transition: 3s;
 }
 
+ /****************** NOMINATION OSCAR *************/
+
+ .nomination {  
+  position: relative;
+  padding-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomination__title {  
+  position: relative;
+}
+
+.nomination__title h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: normal;
+  text-align: left;
+}
+
+.nomination::before {
+  content: url("../assets/images/Sunflower.png");
+  position: absolute;
+  left: 110px;
+  top: 0;
+}
+
+.nomination::after {
+  content: url("../assets/images/orchid.png");
+  position: absolute;
+  right: -71px;
+  top: -42px;
+}
+
+.site-footer::after, .site-footer::before {
+  display: none;
+}

@@ -21,6 +21,7 @@ observer.observe(document.querySelector(".story__title"));
 observer.observe(document.querySelector(".characters__title"));
 observer.observe(document.querySelector(".place__title"));
 observer.observe(document.querySelector(".studio__title")); 
+observer.observe(document.querySelector(".oscars__title")); 
 
 
 
