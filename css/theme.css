@@ -110,7 +110,7 @@ main {
 .oscars__title{
   color: transparent;
 }
-
+ 
 .visible{
   color: #FFF5E9;
   transition: 3s;
@@ -144,6 +144,8 @@ main {
   position: absolute;
   left: 110px;
   top: 0;
+  z-index: 1;
+  opacity: 1;
 }
 
 .nomination::after {
@@ -156,3 +158,27 @@ main {
 .site-footer::after, .site-footer::before {
   display: none;
 }
+
+/**************** SWIPER ***************/
+
+#characters {
+  display: flex;
+  flex-direction: column;
+}
+
+.story #characters h3 {
+  margin-left: -750px;
+}
+
+.swiper-slide {
+  width: 300px !important;
+  height: 300px !important;
+  
+}
+
+
+
+
+
+
+

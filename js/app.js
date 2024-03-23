@@ -1,5 +1,6 @@
+
 /*************** H2 -- H3 *************/
-const ratio = .2
+const ratio = .3
 const options = {
   root: null,
   rootMargin: "0px",
@@ -24,4 +25,22 @@ observer.observe(document.querySelector(".studio__title"));
 observer.observe(document.querySelector(".oscars__title")); 
 
 
+/**************** SWIPER ***************/
 
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 60,
+    speed: 2000,
+    autoplay: {
+      delay: 1250,
+    },
+    effect: "coverflow",
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 3,
+    coverflowEffect: {
+      rotate: 60,
+      stretch: 50,
+      slideShadows: false,
+    },
+});
+ 
