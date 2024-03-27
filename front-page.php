@@ -20,14 +20,14 @@ get_header();
                get_template_part ( 'template-parts/characters-slider' ); 
             ?>
             <article id="place">
+                <img class="big_cloud" src="<?php echo get_theme_file_uri() . '/assets/images/big_cloud.png'; ?>" alt="Gros nuage qui passe">
+                <img class="little_cloud" src="<?php echo get_theme_file_uri() . '/assets/images/little_cloud.png'; ?>" alt="Petit nuage qui passe">
                 <div>
                 <h3><span class="place__title">Le Lieu</span></h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
-
             </article>
         </section>
-
         <section id="studio">
           <h2><span class="studio__title">Studio Koukaki</span></h2><div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>

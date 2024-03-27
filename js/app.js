@@ -31,7 +31,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 60,
     speed: 2000,
     autoplay: {
-      delay: 1250,
+      delay: 1000,
     },
     effect: "coverflow",
     centeredSlides: true,
@@ -44,3 +44,19 @@ const swiper = new Swiper('.swiper', {
     },
 });
  
+
+/***************** LIEU NUAGE ***********************/
+
+const lieu = document.querySelector("#place");
+const root = document.documentElement;
+
+window.addEventListener("scroll", () => {
+  
+  position = Math.round(0 - (window.scrollY - lieu.offsetTop - 200));
+  if (position > -450) {
+    root.style.setProperty("--position", position + "px");
+  }
+});
+
+
+
