@@ -88,9 +88,14 @@ main {
 .site-footer::before,
 .site-footer ul::after,
 .nomination::before,
-.nomination::after
+.nomination::after,
+.modal__content::after,
+.modal__content--story::after,
+.modal__content--characters::after,
+.modal__content--place::after,
+.modal__content--footer::after
 {
-  animation: rotate-flower 10s  linear infinite;
+  animation: rotate-flower 10s linear infinite;
 }
 @keyframes rotate-flower {
   from {
@@ -207,14 +212,166 @@ main {
 }
 
 
+/***************** MENU *****************************/
 
+#site-navigation ul {
+  position: relative;
+  display: flex !important;
+  width: 350px;
+  margin-left: 550px;
+}
 
+.modal__burger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 8px;
+  width: 40px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 50px;
+  cursor: pointer;  
+}
 
+.modal__burger .line {
+  height: 2px;
+  width: 100%;
+  margin: 0;
+}
 
+.modal__burger.close .line:first-child {
+  transform: rotate(45deg) translate3d(8px, 6px, 0);
+}
 
+.modal__burger.close .line:nth-child(2) {
+  opacity: 0;
+}
 
+.modal__burger.close .line:last-child {
+  transform: rotate(-45deg) translate3d(8px, -6px, 0);
+}
 
+.modal {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.4rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
 
+.modal li > a {
+  font-size: 40px;
+}
+
+.modal .modal__content {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  background: #FFF5E9;
+  display: none;
+}
+
+.modal-logo {
+  margin: 40px;
+  width: 154px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 92, 0, 0.6));
+}
+
+.modal__content ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  gap: 26px;
+  margin-top: 50px;
+}
+
+.modal__content li > a:hover {
+  filter: drop-shadow(0px 0px 14px #ff5c00);
+  color: black; 
+}
+
+.modal__content--footer {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal__content--footer a{
+  margin-top: 50px;
+  transform: translateY(40px);
+}
+
+.modal__content--story::before {
+  content: url("../assets/images/chat-violet.png");
+  position: absolute;
+  right: 400px;
+  top: -70px;
+  animation: float 5s infinite; 
+}
+
+.modal__content--place::before {
+  content: url("../assets/images/chat-noir.png");
+  position: absolute;
+  left: 300px;
+  top: -50px;  
+  animation: float 5s infinite; 
+}
+
+.modal__content--footer::before {
+  content: url("../assets/images/chat-jaune.png");
+  position: absolute;
+  margin-top: -90px;
+  left:100px;
+  animation: float 5s infinite; 
+}
+
+.modal__content::after{
+  content: url("../assets/images/orchid.png");
+  position: absolute;
+  left: -85px;
+  top: 30px;
+  transform: scale(0.8);
+}
+
+.modal__content--story::after {
+  content: url("../assets/images/Sunflower.png");
+  position: absolute;
+  left: 370px;
+  bottom: 50px;
+}
+
+.modal__content--characters::after {
+  content: url("../assets/images/random_flower.png");
+  position: absolute;
+  left: 750px;
+  top: -100px;
+  transform: scale(0.3) !important; 
+}
+
+.modal__content--place::after {
+  content: url("../assets/images/flower.png");
+  position: absolute;
+  right: 500px;
+  top: -50px;
+  transform: scale(0.5);
+}
+
+.modal__content--footer::after {
+  content: url("../assets/images/hibiscus_footer.png");
+  position: absolute;
+  left: 1110px;
+  margin-bottom: -15px;
+  margin-top: -190px;
+  background-color: aqua;
+}
 
 
 

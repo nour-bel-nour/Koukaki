@@ -1,5 +1,6 @@
 
 /*************** H2 -- H3 *************/
+
 const ratio = .3
 const options = {
   root: null,
@@ -59,4 +60,17 @@ window.addEventListener("scroll", () => {
 });
 
 
+/***************** MENU *****************************/
+
+document.addEventListener("DOMContentLoaded", () => { 
+
+  (function ($) {
+    $(".modal__burger").click(function () {
+      $(".modal__content").animate(
+        { height: "toggle", opacity: "toggle" }
+       )
+      $(".modal__burger").toggleClass("close")
+    })
+  })(jQuery);
+});
 
