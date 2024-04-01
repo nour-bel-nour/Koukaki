@@ -44,6 +44,16 @@
             <li class="modal__content--place"><a href="#place">Lieu</a></li>
             <li class="modal__content--studio"><a href="#studio">Studio Koukaki</a></li>
           </ul>
+          
+          <div class="chat-violet"></div>
+          <div class="chat-noir"></div>
+          <div class="chat-jaune"></div>
+          <div class="orchid"></div>
+          <div class="sunflower"></div>
+          <div class="random"></div>
+          <div class="flower"></div>
+          <div class="hibiscus"></div>
+
           <div class="modal__content--footer">
             <a href="#">STUDIO KOUKAKI</a></li>
           </div>

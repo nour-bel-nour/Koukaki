@@ -89,11 +89,11 @@ main {
 .site-footer ul::after,
 .nomination::before,
 .nomination::after,
-.modal__content::after,
-.modal__content--story::after,
-.modal__content--characters::after,
-.modal__content--place::after,
-.modal__content--footer::after
+.orchid,
+.sunflower,
+.random,
+.flower,
+.hibiscus
 {
   animation: rotate-flower 10s linear infinite;
 }
@@ -309,31 +309,31 @@ main {
   transform: translateY(40px);
 }
 
-.modal__content--story::before {
+.chat-violet {
   content: url("../assets/images/chat-violet.png");
   position: absolute;
-  right: 400px;
-  top: -70px;
+  top: 150px;
+  left: 310px;
   animation: float 5s infinite; 
 }
 
-.modal__content--place::before {
+.chat-noir{
   content: url("../assets/images/chat-noir.png");
   position: absolute;
-  left: 300px;
-  top: -50px;  
+  right: 300px;
+  top: 350px;
   animation: float 5s infinite; 
 }
 
-.modal__content--footer::before {
+.chat-jaune {
   content: url("../assets/images/chat-jaune.png");
   position: absolute;
-  margin-top: -90px;
-  left:100px;
+  left: 50px;
+  top: 500px;
   animation: float 5s infinite; 
 }
 
-.modal__content::after{
+.orchid{
   content: url("../assets/images/orchid.png");
   position: absolute;
   left: -85px;
@@ -341,39 +341,40 @@ main {
   transform: scale(0.8);
 }
 
-.modal__content--story::after {
+.sunflower {
   content: url("../assets/images/Sunflower.png");
   position: absolute;
-  left: 370px;
-  bottom: 50px;
-}
+  top: 80px;
+  right: 271px;
+  }
 
-.modal__content--characters::after {
+.random {
   content: url("../assets/images/random_flower.png");
   position: absolute;
-  left: 750px;
-  top: -100px;
-  transform: scale(0.3) !important; 
+  top: 250px;
+  right: -40px;
+  width: 75px;
+  height: 75px;
+  
 }
 
-.modal__content--place::after {
+.flower {
   content: url("../assets/images/flower.png");
   position: absolute;
-  right: 500px;
-  top: -50px;
-  transform: scale(0.5);
+  width: 70px;
+  height: 70px;
+  top: 370px;
+  left: 250px;
 }
 
-.modal__content--footer::after {
+.hibiscus {
   content: url("../assets/images/hibiscus_footer.png");
   position: absolute;
-  left: 1110px;
-  margin-bottom: -15px;
-  margin-top: -190px;
-  background-color: aqua;
+  width:626px;
+  height:626px;
+  bottom: 0;
+  left:1122px;
 }
-
-
 
 
 
